@@ -1,0 +1,31 @@
+// Light Skin
+.fake {
+	color: pink;
+}
+body {
+	background: #fff;
+}
+.slider-band {
+	background: #f9f9f9;
+}
+header {
+	background: #f9f9f9;
+}
+.header-border {
+	border-bottom: none;
+}
+.header-border-light {
+	border-bottom: 1px solid #e3e3e3;
+}
+header nav ul li a {
+	color: #2c2c2c;
+}
+header nav ul li a:hover {
+	background: #f9f9f9;
+}
+header nav ul li.current-menu-item {
+	background: #f9f9f9;
+}
+.logo a {
+	color: #2C2C2C;
+}

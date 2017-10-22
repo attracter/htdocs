@@ -1,0 +1,517 @@
+
+/*  ----------------------------------------------------------------------------
+    This editor style is also loaded in the backend to style the posts
+*/
+
+@import "variables.less";
+
+
+
+
+
+/*  ----------------------------------------------------------------------------
+    editor style
+*/
+
+.mce-content-body {
+  img {
+    height: auto;
+    max-width: 100% !important;
+  }
+}
+
+/* max width */
+html .mceContentBody {
+  max-width:700px;
+  //max-width: 1074px ;
+
+  font-family: @font3;
+}
+
+html .mceContentBody-max-width-big {
+  max-width: 1074px;
+}
+
+
+
+
+/*  ----------------------------------------------------------------------------
+    tinymce custom tagdiv styles
+*/
+.td-paragraph-padding-0 {
+  display:inline-block;
+  padding-left: 0%;
+  padding-right: 11%;
+  max-width: 89%;
+}
+
+.td-paragraph-padding-1 {
+  display:inline-block;
+  padding-left: 11%;
+  padding-right: 11%;
+  max-width: 78%;
+}
+
+
+.td-paragraph-padding-2 {
+  display:inline-block;
+  padding-left: 17.5%;
+  padding-right: 17.5%;
+  max-width: 65%;
+}
+
+
+.td-paragraph-padding-3 {
+  display:inline-block;
+  padding-left: 11%;
+  padding-right: 17.5%;
+  max-width: 71.5%;
+}
+
+
+.td-paragraph-padding-4 {
+  display:inline-block;
+  padding-left: 11%;
+  padding-right: 0%;
+  max-width: 89%;
+}
+
+
+//smaller spaces on two columns
+.td-post-content.span8,
+.column_container.span8,
+.mceContentBody-max-width-small  //editor-style
+{
+  .td-paragraph-padding-0 {
+    padding-right: 5%;
+    max-width: 95%;
+  }
+
+  .td-paragraph-padding-1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 90%;
+  }
+
+  .td-paragraph-padding-2 {
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+    max-width: 83%;
+  }
+
+  .td-paragraph-padding-3 {
+    display:inline-block;
+    padding-left: 5%;
+    padding-right: 8.5%;
+    max-width: 86.5%;
+  }
+
+  .td-paragraph-padding-4 {
+    padding-left: 5%;
+    max-width: 95%;
+  }
+
+}
+
+
+
+/* responsive phone */
+@media (max-width: 500px) {
+  .td-paragraph-padding-0,
+  .td-paragraph-padding-1,
+  .td-paragraph-padding-2,
+  .td-paragraph-padding-3,
+  .td-paragraph-padding-4 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+
+    display: block; //fix for mobile
+  }
+}
+
+
+
+.td-quote-classic {
+  p {
+    font-family: 'Vollkorn', serif;//!important;
+    color:#4b4b4b;
+    font-size:41px;
+    line-height: 48px;
+
+    font-weight: normal;//!important;
+  }
+}
+
+
+.td-post-content.span8 {
+  .td-quote-classic {
+    margin-top:40px;
+    margin-bottom:40px;
+
+    p {
+      font-size:39px;
+      line-height: 47px;
+    }
+  }
+}
+
+
+.td-quote-classic {
+  .td-quote-author p {
+    font-size:22px;
+    line-height: 22px;
+    color:#CAC4BF;
+
+    position: relative;
+    top:-14px;
+    margin-bottom: 0px;
+  }
+}
+
+
+/*  ----------------------------------------------------------------------------
+    posts .h-s
+*/
+
+.td-post-text-content,
+.mce-content-body //editor-style
+{
+  font-size:15px;
+  color:#262626;
+  line-height: 23px;
+
+  img {
+    display: block;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: @font3;
+    color:#222222;
+    font-weight: normal;
+    margin:25px 0px 27px 0px;
+  }
+
+
+  h1 {
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: bold;
+  }
+
+  h6 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: bold;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+a:active, a:focus { /* IE remove focus */
+  outline: none;
+  //ie-dummy: expression(this.hideFocus=true);
+}
+
+
+a {  /* normal link */
+  color:@td_theme_color;
+  text-decoration: none !important;
+  //.transition(color @td_transition_time);
+}
+
+a:hover {
+  text-decoration: underline !important;
+  color:darken(@td_theme_color, 10%);
+  //.transition(color @td_transition_time);
+}
+
+
+ins {
+  background: white;
+  text-decoration: none;
+}
+
+
+code {
+  position: relative;
+  top:-1px;
+  border: none;
+}
+
+
+
+pre {
+  background-color: transparent;
+  padding: 0px;
+  border: none;
+  border-radius: 0px;
+
+  margin-top: 24px;
+}
+
+
+
+
+
+/*  ----------------------------------------------------------------------------
+    quote
+*/
+blockquote {
+  padding: 0px;
+
+  position: relative;
+  border-left: none;
+  margin: 42px 0 42px 0;
+
+}
+
+blockquote p {
+  font-family: @font5;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  color: @td_theme_color;
+}
+
+blockquote p:first-child {
+  padding-top: 0px;
+}
+
+blockquote {
+
+  small, cite {
+    margin-top: 5px;
+    display: block;
+    font-size:14px !important; /* ovveride bootstrap */
+    font-style: italic;
+    font-weight: normal;
+    color:#444444;
+  }
+
+}
+
+cite {
+  font-size:14px !important; /* ovveride bootstrap */
+  font-style: italic;
+  font-weight: normal;
+  color:#444444;
+
+  a {
+    color:#444444;
+    &:hover {
+      color:#444444 !important;
+    }
+  }
+}
+
+blockquote.pull-right {
+  padding-left: 20px;
+  border-right: none;
+}
+
+blockquote.pull-right:after {
+  border-right: 2px solid #FB5502;
+  width:40px;
+  right: -40px;
+}
+
+
+
+/*  ----------------------------------------------------------------------------
+    text and Images align
+*/
+.post,
+.page,
+.mce-content-body //editor-style
+
+{
+  .alignnone {
+
+  }
+
+  .aligncenter {
+    text-align: center;
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+  }
+
+
+
+  /*  ----------------------------------------------------------------------------
+      align left
+  */
+  .alignleft {
+    float:left;
+    margin-right: 23px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+
+
+    /* responsive portrait tablet */
+    @media (min-width: 768px) and (max-width: 1018px) {
+      max-width: 220px !important;
+    }
+
+
+    /* responsive phone */
+    @media (max-width: 767px) {
+      max-width: 220px !important;
+    }
+
+    /* responsive phone CUSTOM - align the image on center */
+    @media (max-width: 500px) {
+      float:none;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100% !important;
+      width: 100% !important;
+
+      img {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      figcaption {
+        text-align: center;
+      }
+    }
+  }
+
+
+  /*  ----------------------------------------------------------------------------
+      align right
+  */
+  .alignright {
+    float:right;
+    margin-left: 23px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+
+
+
+    /* responsive phone */
+    @media (max-width: 767px) {
+      max-width: 220px !important;
+    }
+
+    /* responsive portrait tablet */
+    @media (min-width: 768px) and (max-width: 1018px) {
+      max-width: 220px !important;
+    }
+
+    /* responsive phone CUSTOM */
+    @media (max-width: 500px) {
+      float:none;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100% !important;
+
+      img {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      figcaption {
+        text-align: center;
+      }
+
+    }
+  }
+
+  figure.alignright,
+  figure.alignleft,
+  figure.aligncenter {
+    margin-bottom: 0px;
+  }
+}
+
+
+/*  ----------------------------------------------------------------------------
+     caption
+*/
+
+.wp-caption-text {
+  text-align: left;
+  margin: 0px !important;
+
+  padding: 5px 0px 23px 0px;
+
+  font-family: 'Open Sans', arial, sans-serif !important;
+  font-size:12px;
+  font-style: italic;
+  font-weight: normal;
+  color:#444444;
+  line-height: 20px;
+}
+
+
+.wp-caption {
+  text-align: center;
+  max-width: 100% !important;
+
+}
+
+
+.alignnone img,
+.aligncenter img
+{
+  width: 100%;
+}
+
+
+.wp-caption img {
+  max-width: 100% !important;
+}
+
+
+

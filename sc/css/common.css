@@ -1,0 +1,135 @@
+﻿/* socia'L CORE */
+/* socialcore.jp */
+/* 共通CSS */
+/* 制作／role-design.com */
+
+
+body{
+	margin: 0;
+        padding: 0;
+	margin-left: auto;
+	margin-right: auto; 
+	text-align: left;
+        font-family: 'ＭＳ 明朝', "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN", monospace;
+        color: #030000;	
+	background: #cfc8c1;
+        font-size: 13px;
+	*font-size: small; 	/* for Standard conforming mode (Win IE7,Win IE6 )*/
+	*font: x-small; 	/* for Rear interchangeable mode (Win IE 5-5.5､6) */ }
+　　　　
+input { font-family: 'ＭＳ 明朝', "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN", monospace; }
+
+a 		{ text-decoration: none; outline: none; font-weight: normal; }
+a:visited 	{ text-decoration: none; outline: none; font-weight: normal; }
+a:hover		{ text-decoration: none; outline: none; font-weight: normal; }
+a:active	{ text-decoration: none; outline: none; font-weight: normal; }
+
+p {
+        margin: 0;
+        padding: 0; }
+
+div {
+        margin: 0;
+        padding: 0; }
+
+ul {    font-weight: normal; 
+        text-decoration: none;
+	list-style-type: square; }
+
+img {   border: 0; vertical-align: baseline; }
+
+form {	padding: 0; display: inline; }
+
+
+#wrapper {
+        margin: 0 auto;
+        padding: 0;
+        width: 1200px;
+        height: 1181px;
+        background: url(http://socialcore.jp/images/bg.jpg) no-repeat;
+        text-align: left;
+        position: relative;
+        top: -1px; }
+
+
+/*** 左サイド ***/
+
+#left-side {
+	width: 370px;
+	margin-left: 112px;
+        padding: 17px;
+	float: left;
+	color: #90857f; }
+
+#left-side h1 {
+	text-indent: -9999px;
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding-top: 55px; }
+
+#left-side h1 a {
+	text-indent: -9999px;
+        width: 312px;
+        height: 49px;
+        margin: 0px;
+	display: block;
+        background: url(http://www.socialcore.jp/images/logo.png) 50% 0 no-repeat; }
+
+#left-side .text-top {
+	margin-top: 32px;
+        width: 300px;
+        height: auto;
+	line-height: 19px;
+	filter:alpha(opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9; } 
+
+#left-side .text-mid {
+	margin-top: 200px;
+        width: 300px;
+        height: auto;
+	line-height: 19px;
+	filter:alpha(opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9; } 
+
+#left-side .text-bottom {
+	margin-top: 26px;
+        width: 330px;
+        height: auto;
+	line-height: 19px;
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+	filter:alpha(opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9; } 
+
+
+/*** 右サイド ***/
+
+#right-side {
+	width: 536px;
+	height: auto;
+        padding: 0;
+	float: left;
+	text-align: right;
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", sans-serif; }
+
+#right-side .text-top {
+	margin-top: 353px;
+	width: 536px;
+	height: auto; } 
+
+#right-side img {
+	padding-right: 2px; }
+
+#right-side .contact {
+	margin-top: 250px;
+	width: 536px;
+	height: auto; } 
+
+.copy {
+	color: #5a514a;
+	padding-top: 4px; }
+
+

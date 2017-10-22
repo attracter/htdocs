@@ -1,0 +1,215 @@
+.ie9, .ie10 {
+  .iosSlider {
+    .slide-meta-cat {
+      line-height: 27px !important;
+    }
+  }
+
+
+  .td-sbig-title-wrap .td-sbig-title {
+    float:none;
+  }
+}
+
+
+
+
+.ie9, .ie8 {
+  .td-login-input {
+    padding-top: 7px;
+    padding-bottom: 1px;
+  }
+}
+
+
+.ie8 {
+
+  .page-nav {
+    img {
+      display: none;
+    }
+  }
+
+  .td-social-sharing {
+    display: none;
+  }
+
+  .td-sbig-title-wrap .td-sbig-title {
+    float:none;
+  }
+}
+
+
+//gallery slide
+@wight_2_columns:630px;
+.ie8 {
+  .td-slide-on-2-columns{
+    .td-gallery-slide-top {
+      width: @wight_2_columns;
+
+      .td-gallery-title{
+        font-size: 12px;
+        width: 70%;
+      }
+      .td-gallery-controls-wrapper {
+        width: 159px;
+      }
+    }
+
+    .td-doubleSlider-1{
+      width: @wight_2_columns;
+
+      .td-gallery-slide-content {
+        width: @wight_2_columns;
+      }
+    }
+
+    .td-doubleSlider-2{
+      width: @wight_2_columns;
+
+      &.td_center_slide2 {
+        .td-button {
+          width: 81px;
+        }
+
+        .td-border {
+          width: 76px;
+        }
+      }
+    }
+  }
+
+
+  .td-slide-on-3-columns{
+    .td-doubleSlider-1{
+      .td-gallery-slide-content {
+        width: 955px;
+      }
+    }
+
+    .td-doubleSlider-2{
+      &.td_center_slide2 {
+        .td-button {
+          width: 83px;
+        }
+
+        .td-border {
+          width: 77px;
+        }
+      }
+    }
+  }
+}
+
+//video playlist
+.ie8 {
+
+  //3 columns
+  .td_video_playlist_column_3 {
+    //wrapper variables
+    @player_wrapper : 649px;
+    @playlist_wrapper : 320px;
+
+    .td_wrapper_player {
+      display: inline-block;
+      width: @player_wrapper;
+    }
+
+    .td_container_video_playlist {
+      display: inline-block;
+      width: @playlist_wrapper;
+    }
+
+    .td_video_playlist_title{
+      width: 962px;
+    }
+  }
+
+  //2 column
+  .td_video_playlist_column_2 {
+    //wrapper variables
+    @player_wrapper : 630px;
+    @playlist_wrapper : 630px;
+
+    .td_wrapper_player {
+      display: block;
+      width: @player_wrapper;
+    }
+
+    .td_container_video_playlist {
+      display: block;
+      width: @playlist_wrapper;
+    }
+
+    .td_video_playlist_title{
+      width: 630px;
+    }
+  }
+
+  //1 column
+  .td_video_playlist_column_1 {
+
+    //wrapper variables
+    @player_wrapper : 293px;
+    @player_wrapper_height : 185px;
+
+    @playlist_wrapper : 293px;
+    @playlist_wrapper_height : 241px;
+
+    @playlist_clickable_height : 176px;
+
+    .td_wrapper_player {
+      display: block;
+      width: @player_wrapper;
+      height: @player_wrapper_height;
+    }
+
+    .td_container_video_playlist {
+      display: block;
+      width: @playlist_wrapper;
+      height: @playlist_wrapper_height;
+
+      .td_playlist_clickable.td_add_scrollbar_to_playlist_for_mobile,
+      .td_playlist_clickable.td_add_scrollbar_to_playlist{
+        height: @playlist_clickable_height;
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+          margin-right: 10px;
+        }
+        .MIXIN_chrome_sidebar;
+      }
+    }
+
+    .td_video_playlist_title {
+      width: @playlist_wrapper;
+    }
+  }
+}
+
+
+/* mobile menu */
+.ie8, .ie9, .ie10, .ie11 {
+  .td-menu-mob-open-menu {
+    .td-grid-wrap {
+      padding-top: 5px;
+    }
+
+    .td-menu-placeholder {
+      display:none;
+    }
+  }
+}
+
+.ie9 {
+  @media screen and (max-width: 767px) {
+    .td-menu-mob-open-menu {
+      #td-mobile-nav {
+        left: 0px;
+      }
+
+      #inner-wrap {
+        left: 80%;
+      }
+    }
+  }
+}

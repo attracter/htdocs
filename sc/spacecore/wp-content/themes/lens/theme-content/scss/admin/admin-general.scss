@@ -1,0 +1,144 @@
+/*-----------------------------------------------*\
+              THEME OPTIONS STYLING
+\*-----------------------------------------------*/
+//@import url('../../../wpgrade-core/vendor/redux3/assets/css/style.css');
+@import "compass";
+
+$content-bg: #fcfcfc;
+$sidebar-bg: #f7f7f7;
+$border-color: #dfdfdf;
+$dark: #464646;
+$light: #777777;
+$lighter: #999999;
+$accent: #07d3f8;
+
+$content-width: 800px;
+$sidebar-width: 250px;
+
+$_u: 24px;
+$_u2: $_u/2;
+$_u4: $_u/4;
+$_2u: $_u*2;
+$_15u: $_u+$_u/2;
+
+$normal: 14px;
+$big: 14px;
+
+
+
+/*-----------------------------------------------*\
+            THEME SPECIFIC - LENS
+\*-----------------------------------------------*/
+
+///**
+// * HERO AREA thumbnails
+// */
+
+#lens_gallery, #portfolio_gallery {
+
+    &.no-image {
+        .inside {
+
+        }
+
+        #pixgallery {
+            margin: 10px 5px;
+            min-height: 115px;
+
+            .open_pixgallery {
+                border: 1px dashed #d9d9d9;
+
+                .icon {
+                    opacity: 1;
+                    color: $dark;
+                }
+                //Change Edit Icon to Upload
+                .icon:before {
+                    content: "\f093";
+                }
+
+                &:hover .icon {
+                    color: $accent;
+                }
+            }
+        }
+
+        // Not needed to clear anything
+        .clear_gallery {
+            display: none !important;
+        }
+    }
+
+
+    #pixgallery {
+        .open_pixgallery {
+            opacity: 1;
+            background: none;
+            -webkit-transition: opacity .1s ease-in 0;
+
+            // Edit Icon on Hover
+            .icon {
+                opacity: 0;
+                -webkit-transition: opacity .1s ease-in 0, color .1s ease-in 0;
+                font-size: 40px;
+                color: $dark;
+
+                &:before {
+                    content: "\f040";
+
+                    @extend %centered;
+                }
+            }
+
+            .clear_gallery {
+                display: block;
+                margin: 0;
+
+                opacity: 0;
+                color: $light;
+                background: none;
+
+                text-transform: uppercase;
+                font-size:11px;
+
+                -webkit-transition: opacity .1s ease-in 0, color .1s ease-in 0;
+
+                &:hover {
+                    color: $accent;
+                }
+            }
+
+
+            &:hover {
+
+                .icon, .clear_gallery {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+
+//*------------------------------------*\
+//   $HELPERS
+//*------------------------------------*/
+
+%centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+%box-sizing {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
