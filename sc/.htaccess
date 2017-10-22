@@ -1,0 +1,21 @@
+
+# BEGIN WordPress
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/css
+ExpiresActive On
+ExpiresByType text/css "access plus 1 days"
+ExpiresByType image/gif "access plus 10 days"
+ExpiresByType image/jpg "access plus 10 days"
+ExpiresByType image/jpeg "access plus 10 days"
+ExpiresByType image/png "access plus 10 days"
+ExpiresByType application/x-javascript "access plus 10 days"
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
